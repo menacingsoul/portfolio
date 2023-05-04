@@ -168,11 +168,11 @@ header{
    right: 2%;
    width: 50rem;
    height: 90vh;
-    transition: .5s all;
+    transition: .5s ;
   }
   
   .about{
-    height: 50rem;
+    height: 60rem;
     background: linear-gradient(#ebf4f5 5%, hsla(203, 89%, 71%, 1) 50%, hsla(213, 62%, 45%, 1) 100% );
    
     width: 100%;
@@ -187,50 +187,55 @@ header{
     font-size: 30px;
   }
   .container {
+   
     position: absolute;
     height: 300px;
-    width: 1000px;
-    top: 60px;
-    left: calc(50% - 300px);
+    transform-style: preserve-3d;
+    top: 10px;
+    left: calc(50% - 500px);
     display: flex;
   }
   
   .card {
-    display: flex;
-    height: 500px;
-    width: 600px;
+    display: block;
+    height: 550px;
+    width: 500px;
     background-color: #17141d;
-    border-radius: 10px;
-    box-shadow: -.5rem 0 20rem #000;
-  /*   margin-left: -50px; */
-    transition: 0.4s ease-out;
+    border-radius: 12px;
+    box-shadow: -.5rem 0 100rem #000;
+    margin-left: 10%;
+    transition: transform .4s ease;
+    cursor: pointer;
+    
     position: relative;
-    left: 0px;
+    left: 38px;
+    font-display: none;
   }
   
   .card:not(:first-child) {
-      margin-left: -20px;
+      margin-left: -300px;
   }
   
-  .card:hover {
-    transform: translateY(-20px);
-    transition: 0.4s ease-out;
-  }
-  
-  .card:hover  .card {
-    position: relative;
-    left: 50px;
-    transition: 0.4s ease-out;
+  .card:hover{
    
+    
+   transform: translateY(-20px);
+    transition: 0.4s ease all;
   }
-
+  
+  .card:hover ~ .card {
+    position: relative;
+    left: 295px;
+    transition: .5s ease-out;
+  }
   
   .title {
     color: white;
-    font-weight: 300;
+    font-weight: 1000;
     position: absolute;
-    left: 90px;
-    top: 15px;
+    left: 34px;
+    top: 10px;
+    font-size: 27px;
   }
   
  .introc
@@ -238,17 +243,83 @@ header{
   color: #e7eae5;
   margin-top: 20%;
   margin-left: 6%;
+  margin-right: 6%;
+  font-size: 18px;
  }
   
  
   
  
   svg {
-    fill: #17141d;
+    fill: #3c3943;
     stroke-width: 2px;
   }
   
   
+  .educ{
+    color: #ebf4f5;
+    margin-top: 20%;
+    margin-left: 6%;
+    font-weight: 700;
+    font-size: 20px;
+  
+  }
+  .educ1{
+    color: #ebf4f5;
+    margin-top: 7%;
+    margin-left: 6%;
+    font-weight: 700;
+    font-size: 20px;
+  
+  }
+  .edudetail
+  {
+    color: #ebf4f5;
+    margin-top: 1%;
+    margin-left: 10%;
+    list-style: square;
+    font-size: 15px;
+  }
+  .edudetail1
+  {
+    color: #ebf4f5;
+    margin-top: 1%;
+    margin-left: 10%;
+    list-style: square;
+    font-size: 15px;
+  }
+  .date1
+  {
+    margin-left: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    
+  
+  }
+  .date
+  {
+    margin-left: 200px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .skilldetail
+  {
+    color: #ebf4f5;
+    margin-left: 10%;
+    margin-top: 100px;
+    list-style: circle;
+    font-size: 17px;
+
+  }
+  .honordetail
+  {
+    color: #ebf4f5;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10px;
+    list-style: circle;
+    font-size: 17px;
+  }
   
   #animation2
   {
@@ -277,8 +348,7 @@ header{
   .bg3
   {
     width: 100%;
-   filter:
-    
+       
     background-repeat: no-repeat;
     position: sticky;
   }
